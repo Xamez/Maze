@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+group 'fr.xamez.maze'
+version '1.0'
+setLibsDirName('E:/Developpement/EXPORT/')
+setMainClassName("${group}.Main")
+
+repositories {
+    jcenter()
+}
+
+shadowJar {
+    manifest {
+        attributes "Main-Class": mainClassName
+    }
+}
+
+javafx {
+    modules("javafx.controls")
+    version '12'
+}
+
+

@@ -7,7 +7,6 @@ plugins {
 
 group 'fr.xamez.maze'
 version '1.0'
-setLibsDirName('E:/Developpement/EXPORT/')
 setMainClassName("${group}.Main")
 
 repositories {
